@@ -20,6 +20,21 @@ header {
 header .imgbox {
   width: 40px;
 }
+header .btn {
+  display: flex;
+  align-items: center;
+  display: none;
+  border: 1px solid #64a29f;
+  padding: 3px;
+}
+header .btn h4 {
+  font-size: 18px;
+  cursor: pointer;
+}
+header .btn h4 .icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
 header nav a {
   font-size: 20px;
   color: #8c8999;
@@ -27,6 +42,15 @@ header nav a {
 }
 header nav .home-color {
   color: #6eb3b0;
+}
+@media screen and (max-width: 576px) {
+  header .menu nav {
+    display: none;
+  }
+  header .menu .btn {
+    display: flex;
+    margin-right: 30px;
+  }
 }
 
 #beautiful {
@@ -60,6 +84,26 @@ header nav .home-color {
 #beautiful .box h4 {
   font-size: 20px;
 }
+@media screen and (max-width: 992px) {
+  #beautiful .box h1 {
+    font-size: 50px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #beautiful .box h1 {
+    font-size: 40px;
+    margin-right: 40px;
+  }
+  #beautiful .box h5 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #beautiful .box h1 {
+    font-size: 33px;
+  }
+}
 
 #thehome {
   background-color: #f1f8f9;
@@ -73,8 +117,9 @@ header nav .home-color {
 #thehome .textbox h5 {
   color: #8a8a8a;
   font-size: 20px;
-  margin: 25px 75px 50px 0;
+  margin: 25px 0;
   line-height: 1.3;
+  width: 400px;
 }
 #thehome .textbox .btn {
   padding: 13px 30px;
@@ -85,6 +130,27 @@ header nav .home-color {
 }
 #thehome .imgbox {
   width: 520px;
+}
+@media screen and (max-width: 992px) {
+  #thehome .textbox h1 {
+    font-size: 50px;
+  }
+  #thehome .imgbox {
+    width: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  #thehome .textbox {
+    text-align: center;
+    margin-left: 25px;
+  }
+  #thehome .textbox h1 {
+    font-size: 40px;
+  }
+  #thehome .imgbox {
+    width: 300px;
+    margin-top: 10px;
+  }
 }
 
 #works h1 {
